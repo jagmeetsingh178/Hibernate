@@ -1,0 +1,20 @@
+package com.ibm.hibernate_one_to_one_uniderctional.dto;
+
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@AllArgsConstructor
+@NoArgsConstructor
+@Data
+@Entity
+public class Capital 
+{
+	@Id
+	private int id;
+	private String name;
+	private long population;
+	private int no_of_district;
+}
